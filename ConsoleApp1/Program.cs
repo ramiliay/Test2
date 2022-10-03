@@ -63,7 +63,7 @@ namespace ConsoleApp1
             var sentenceQuery = from sentence in sentences
                                 let w = sentence.Split(new char[] { '.', '?', '!', ' ', ';', ':', ',' },
                                                         StringSplitOptions.RemoveEmptyEntries)
-                                where w.Distinct().Intersect(wordsToMatch).Count() == wordsToMatch.Count()
+                                where w.Distinct().Intersect(wordsToMatch).Count() == wordsToMatch.Count() // llllllllllllllllllllllllllllllll
                                 select sentence;
 
             // Execute the query. Note that you can explicitly type  
